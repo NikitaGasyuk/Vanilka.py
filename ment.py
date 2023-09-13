@@ -1,7 +1,8 @@
-def compare_lists(list1, list2):
-if len(list1) != len(list2):
-return False
-for i in range(len(list1)):
-if list1[i] != list2[-1]:
-return False
-return True
+def check_lists(list1, list2):
+    if list1[0] == list2[0] or list1[-1] == list2[-1]:
+        return True
+    else:
+        return False
+list1 = []
+list2 = [] 
+print(check_lists(list1, list2))
